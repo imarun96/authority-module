@@ -1,0 +1,28 @@
+logging:
+    file:
+        name: D:/Downloads/ELK/logs/spring-security-module.log
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 8001
+spring:
+    application:
+        name: Product-Manager
+    datasource:
+        url: jdbc:mysql://localhost:3306/devhospital
+        username: root
+        password: Arunbhu96
+    jpa:
+        hibernate:
+            ddl-auto: none
+    cloud:
+        consul:
+            host: localhost
+            port: 6060
+bezkoder:
+    app:
+        jwtExpirationMs: 86400000
+        jwtSecret: bezKoderSecretKey
